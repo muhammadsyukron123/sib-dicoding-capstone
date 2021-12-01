@@ -3,11 +3,11 @@
     <item
         android:id="@+id/trackerFragment"
         android:icon="@drawable/ic_diary"
-        android:title="Diary" />
+        android:title="My Meal Diary" />
     <item
         android:id="@+id/nutrientFragment"
         android:icon="@drawable/ic_calories"
-        android:title="Daily Nutrition" />
+        android:title="Daily Total Nutrition" />
     <item
         android:id="@+id/settingsFragment"
         android:icon="@drawable/ic_settings"

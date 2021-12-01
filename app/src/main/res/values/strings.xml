@@ -11,15 +11,12 @@
     <string name="system_theme_preference_value">SYSTEM_THEME</string>
 
     <!-- Fragment Labels -->
-    <string name="diary">Diary</string>
-    <string name="daily_nutrition">Daily Nutrition</string>
+    <string name="diary">My Meal Diary</string>
+    <string name="daily_nutrition">Total Daily Nutrition</string>
     <string name="food">Food</string>
     <string name="settings">Settings</string>
     <string name="search_food">Search Food</string>
     <string name="about">About</string>
-    <!-- About Fragment -->
-    <string name="about_description">Minimalist calorie tracker with natural language API</string>
-    <string name="github_page">GitHub Page</string>
     <!-- Counter -->
     <string name="remaining_calories">Remaining calories</string>
     <string name="goal">Goal</string>

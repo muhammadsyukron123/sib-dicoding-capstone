@@ -9,7 +9,7 @@
         app:showAsAction="ifRoom|collapseActionView" />
     <item
         android:id="@+id/clear_button"
-        android:title="Clear history foods"
+        android:title="Clear foods history"
         app:showAsAction="never" />
 
 </menu>

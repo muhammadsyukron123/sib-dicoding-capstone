@@ -69,7 +69,7 @@ class SearchFragment :
         val searchIcon = menu.findItem(R.id.search_icon)
         val searchView = searchIcon.actionView as SearchView
         searchView.apply {
-            queryHint = "Ex: 100g of Cheddar"
+            queryHint = "Ex: 25g of Eggs"
             setOnQueryTextListener(object : SearchView.OnQueryTextListener {
                 override fun onQueryTextSubmit(query: String?): Boolean {
                     searchQuery.value = query

@@ -41,7 +41,6 @@ class SettingsFragment : PreferenceFragmentCompat() {
     private fun setGoalPreference() {
         val editTextPreference = preferenceManager
             .findPreference<EditTextPreference>(getString(R.string.goal_preferences_key))
-        // Set summary to the goal value, if it exists
         editTextPreference?.summaryProvider =
             Preference.SummaryProvider<EditTextPreference> { preference ->
                 val text = preference.text

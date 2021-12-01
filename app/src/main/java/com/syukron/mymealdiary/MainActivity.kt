@@ -12,8 +12,7 @@ import androidx.navigation.ui.*
 import com.google.android.material.navigation.NavigationView
 import com.syukron.mymealdiary.util.ThemeProvider
 
-class MainActivity :
-    AppCompatActivity(R.layout.activity_main),
+class MainActivity : AppCompatActivity(R.layout.activity_main),
     NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var navController: NavController

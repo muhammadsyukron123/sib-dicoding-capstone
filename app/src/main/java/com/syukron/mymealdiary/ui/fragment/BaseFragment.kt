@@ -51,11 +51,11 @@ abstract class BaseFragment<BindingType : ViewBinding>(
     }
 
     override fun onDestroy() {
-        // Revert changes made to the *Up* button, if needed
+
         if (upButtonNeeded) {
             (activity as MainActivity).useHamburgerButton()
         }
-        // Revert changes made to the navigation drawer, if needed
+
         if (lockDrawer) {
             (activity as MainActivity).lockDrawerSlide(false)
         }
