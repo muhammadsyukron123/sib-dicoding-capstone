@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/trackerFragment">
+
+    <fragment
+        android:id="@+id/trackerFragment"
+        android:name="com.syukron.mymealdiary.ui.fragment.TrackerFragment"
+        android:label="@string/diary"
+        tools:layout="@layout/fragment_tracker">
+        <action
+            android:id="@+id/action_trackerFragment_to_foodFragment"
+            app:destination="@id/foodFragment" />
+        <action
+            android:id="@+id/action_trackerFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_trackerFragment_to_nutrientFragment"
+            app:destination="@id/nutrientFragment" />
+        <action
+            android:id="@+id/action_trackerFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_trackerFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodFragment"
+        android:name="com.syukron.mymealdiary.ui.fragment.FoodFragment"
+        android:label="{foodName}"
+        tools:layout="@layout/food_nutrient_view">
+        <action
+            android:id="@+id/action_foodFragment_to_trackerFragment"
+            app:destination="@id/trackerFragment"
+            app:popUpTo="@id/trackerFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="foodName"
+            android:defaultValue="Food"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.syukron.mymealdiary.ui.fragment.SearchFragment"
+        android:label="@string/search_food"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_searchFragment_to_trackerFragment"
+            app:destination="@id/trackerFragment"
+            app:popUpTo="@id/trackerFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_searchFragment_to_foodFragment"
+            app:destination="@id/foodFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nutrientFragment"
+        android:name="com.syukron.mymealdiary.ui.fragment.NutrientFragment"
+        android:label="@string/daily_nutrition"
+        tools:layout="@layout/food_nutrient_view">
+        <action
+            android:id="@+id/action_nutrientFragment_to_trackerFragment"
+            app:destination="@id/trackerFragment"
+            app:popUpTo="@id/trackerFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="upButtonNeeded"
+            android:defaultValue="false"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.syukron.mymealdiary.ui.fragment.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@xml/preferences">
+        <action
+            android:id="@+id/action_settingsFragment_to_trackerFragment"
+            app:destination="@id/trackerFragment"
+            app:popUpTo="@id/trackerFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

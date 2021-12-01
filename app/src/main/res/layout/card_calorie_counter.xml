@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="10dp"
+    tools:context='.ui.widget.Counter'>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/counter_text"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/default_padding"
+            android:text="@string/remaining_calories"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/more_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/counter_text"
+            app:srcCompat="@drawable/ic_more" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/calories_goal"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/minus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/counter_text"
+            tools:text="1230.0" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/goal"
+            app:layout_constraintEnd_toEndOf="@id/calories_goal"
+            app:layout_constraintStart_toStartOf="@id/calories_goal"
+            app:layout_constraintTop_toBottomOf="@id/calories_goal" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/minus"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minus"
+            app:layout_constraintEnd_toStartOf="@id/calories_value"
+            app:layout_constraintStart_toEndOf="@id/calories_goal"
+            app:layout_constraintTop_toBottomOf="@id/counter_text"
+            tools:text="-" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/calories_value"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/equals"
+            app:layout_constraintStart_toEndOf="@id/minus"
+            app:layout_constraintTop_toBottomOf="@id/counter_text"
+            tools:text="2340.0" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/meals"
+            app:layout_constraintEnd_toEndOf="@id/calories_value"
+            app:layout_constraintStart_toStartOf="@id/calories_value"
+            app:layout_constraintTop_toBottomOf="@id/calories_value" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/equals"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/equals"
+            app:layout_constraintEnd_toStartOf="@id/calories_remaining"
+            app:layout_constraintStart_toEndOf="@id/calories_value"
+            app:layout_constraintTop_toBottomOf="@id/counter_text"
+            tools:text="=" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/calories_remaining"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/equals"
+            app:layout_constraintTop_toBottomOf="@id/counter_text"
+            tools:text="460.0 kcal" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remaining"
+            app:layout_constraintEnd_toEndOf="@id/calories_remaining"
+            app:layout_constraintStart_toStartOf="@id/calories_remaining"
+            app:layout_constraintTop_toBottomOf="@id/calories_remaining" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

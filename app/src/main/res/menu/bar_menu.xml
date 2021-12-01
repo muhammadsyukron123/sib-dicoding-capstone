@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bar_button"
+        android:icon="@drawable/ic_calories"
+        android:title="Daily calories"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/clear_button"
+        android:title="Clear foods"
+        app:showAsAction="never" />
+</menu>

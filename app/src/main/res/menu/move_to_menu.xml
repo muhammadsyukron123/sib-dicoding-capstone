@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/move_to_breakfast"
+        android:title="Breakfast" />
+    <item
+        android:id="@+id/move_to_lunch"
+        android:title="Lunch" />
+    <item
+        android:id="@+id/move_to_dinner"
+        android:title="Dinner" />
+    <item
+        android:id="@+id/move_to_snacks"
+        android:title="Snacks" />
+
+
+</menu>
