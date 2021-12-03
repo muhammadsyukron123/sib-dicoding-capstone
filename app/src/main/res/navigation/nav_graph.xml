@@ -25,6 +25,9 @@
         <action
             android:id="@+id/action_trackerFragment_to_aboutFragment"
             app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_trackerFragment_to_calculatorFragment"
+            app:destination="@id/calculatorFragment" />
     </fragment>
     <fragment
         android:id="@+id/foodFragment"
@@ -80,5 +83,14 @@
             app:destination="@id/trackerFragment"
             app:popUpTo="@id/trackerFragment"
             app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/calculatorFragment"
+        android:name="com.syukron.mymealdiary.ui.fragment.CalculatorFragment"
+        android:label="fragment_calculator"
+        tools:layout="@layout/fragment_calculator" >
+        <action
+            android:id="@+id/action_calculatorFragment_to_trackerFragment"
+            app:destination="@id/trackerFragment" />
     </fragment>
 </navigation>

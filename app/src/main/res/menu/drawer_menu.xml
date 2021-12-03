@@ -5,6 +5,10 @@
         android:icon="@drawable/ic_diary"
         android:title="My Meal Diary" />
     <item
+        android:id="@+id/calculatorFragment"
+        android:icon="@drawable/ic_calculate"
+        android:title="Calculator MBR" />
+    <item
         android:id="@+id/nutrientFragment"
         android:icon="@drawable/ic_calories"
         android:title="Daily Total Nutrition" />

@@ -70,12 +70,12 @@ class FoodRepository(val context: Context) {
         return localDataSource.getAllFoodsWithListType(listType.ordinal)
     }
 
-    fun getSavedGoalFromPreferences(): Int {
+    fun getSavedGoalFromPreferences(valueGoal: Int): Int {
         val savedGoal = sharedPreferences.getString(
             goalPreferencesKey,
-            "2000"
+            valueGoal.toString()
         )
-        return savedGoal?.toInt() ?: 2000
+        return savedGoal?.toInt() ?: valueGoal
     }
 
     fun setSavedGoalFromPreferences(newSavedGoal: Int) {
