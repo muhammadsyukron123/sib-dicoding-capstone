@@ -20,7 +20,8 @@ class TrackerFragment : BaseFragment<FragmentTrackerBinding>(
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         sharedViewModel.modType = ModType.EDIT
-        sharedViewModel.refreshCalorieGoal()
+        val goal = 5000
+        sharedViewModel.refreshCalorieGoal(goal)
         super.onViewCreated(view, savedInstanceState)
     }
 

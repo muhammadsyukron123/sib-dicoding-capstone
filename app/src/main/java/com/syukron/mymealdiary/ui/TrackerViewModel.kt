@@ -34,7 +34,7 @@ class TrackerViewModel(application: Application) :
     var modType = ModType.EDIT
 
     val calories = _repository.getKcalSum()
-    val caloriesGoal = MutableLiveData(_repository.getSavedGoalFromPreferences())
+    val caloriesGoal = MutableLiveData(_repository.getSavedGoalFromPreferences(0))
     val caloriesRemaining = createRemainingCalories()
 
     private var _listType = ListType.BREAKFAST
@@ -79,8 +79,8 @@ class TrackerViewModel(application: Application) :
         _repository.setSavedGoalFromPreferences(newCalorieGoal)
     }
 
-    fun refreshCalorieGoal() {
-        val refreshedCalorieGoal = _repository.getSavedGoalFromPreferences()
+    fun refreshCalorieGoal(goal : Int) {
+        val refreshedCalorieGoal = _repository.getSavedGoalFromPreferences(goal)
         caloriesGoal.value = refreshedCalorieGoal
     }
 

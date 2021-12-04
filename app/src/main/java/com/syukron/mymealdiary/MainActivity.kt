@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main),
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.trackerFragment,
+                R.id.calculatorFragment,
                 R.id.nutrientFragment,
                 R.id.settingsFragment,
                 R.id.aboutFragment

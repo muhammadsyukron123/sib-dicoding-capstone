@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
 }
 
 def API_KEY = "PNEOX4nA9L89MENJMpWGvQ==U1Sw6wUiXpg0LjOt"
@@ -74,4 +75,7 @@ dependencies {
     implementation "com.squareup.retrofit2:retrofit:2.9.0"
     // Retrofit with Moshi Converter
     implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
+    // Hilt
+    implementation 'com.google.dagger:hilt-android:2.38.1'
+    kapt 'com.google.dagger:hilt-android-compiler:2.38.1'
 }
