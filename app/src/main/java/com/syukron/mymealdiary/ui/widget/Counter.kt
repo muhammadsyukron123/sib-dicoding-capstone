@@ -18,22 +18,6 @@ class Counter(context: Context, attributeSet: AttributeSet) :
         LayoutInflater.from(context), this, true
     )
 
-    fun setMoreClickListener(
-        hint: String,
-        positiveListener: DialogWithTextFieldClickListener? = null
-    ) {
-        binding.moreIcon.setOnClickListener {
-            showDialogWithTextField(
-                context,
-                title = context.getString(R.string.set_calories_goal),
-                hint = hint,
-                inputType = InputType.TYPE_CLASS_NUMBER,
-                positiveText = context.getString(R.string.save),
-                positiveListener = positiveListener
-            )
-        }
-    }
-
     fun setCalories(calories: Double) {
         binding.caloriesValue.text = formatDouble(calories)
     }

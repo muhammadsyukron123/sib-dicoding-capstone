@@ -1,42 +1,24 @@
 package com.syukron.mymealdiary.ui.fragment
 
-import android.content.SharedPreferences
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
+import android.widget.Toast.LENGTH_SHORT
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.syukron.mymealdiary.R
 import com.syukron.mymealdiary.data.viewmodel.CalculatorViewModel
 import com.syukron.mymealdiary.databinding.FragmentCalculatorBinding
 import com.syukron.mymealdiary.util.BMRCalculatorUtil
-import javax.inject.Inject
 
-const val BMR_PREF = "BMR"
-
-class CalculatorFragment : Fragment() {
-
-    private var _binding : FragmentCalculatorBinding? = null
-    private val binding get() = _binding!!
-
+class CalculatorFragment : BaseFragment<FragmentCalculatorBinding>(
+    FragmentCalculatorBinding::inflate,
+    hasOptionsMenu = true
+) {
     private val viewModel: CalculatorViewModel by viewModels()
 
-    @Inject
-    lateinit var sharedPrefs: SharedPreferences
-
     private var calculatedBmr: Float = 0f
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        _binding = FragmentCalculatorBinding.inflate(inflater, container, false)
-        return binding.root
-    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -59,11 +41,13 @@ class CalculatorFragment : Fragment() {
 
 
     private val applyButtonClickListener = View.OnClickListener {
-        sharedPrefs.edit().putFloat(BMR_PREF, calculatedBmr).apply()
-        navigateToDailyFragment()
+        val newGoal = calculatedBmr.toInt()
+        sharedViewModel.setNewCalorieGoal(newGoal)
+        Toast.makeText(context,"Calorie Goals has been set !", LENGTH_SHORT).show()
+        navigateToTrackerFragment()
     }
 
-    private fun navigateToDailyFragment() {
+    private fun navigateToTrackerFragment() {
         this@CalculatorFragment.findNavController()
             .navigate(R.id.action_calculatorFragment_to_trackerFragment)
     }

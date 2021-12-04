@@ -87,7 +87,7 @@
     <fragment
         android:id="@+id/calculatorFragment"
         android:name="com.syukron.mymealdiary.ui.fragment.CalculatorFragment"
-        android:label="fragment_calculator"
+        android:label="@string/bmr_calculator"
         tools:layout="@layout/fragment_calculator" >
         <action
             android:id="@+id/action_calculatorFragment_to_trackerFragment"

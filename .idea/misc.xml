@@ -11,6 +11,7 @@
         <entry key="..\:/AndroidProject/sib-dicoding-capstone-2/app/src/main/res/layout/dialog_edit_text.xml" value="0.25" />
         <entry key="..\:/AndroidProject/sib-dicoding-capstone-2/app/src/main/res/layout/food_nutrient_view.xml" value="0.175" />
         <entry key="..\:/AndroidProject/sib-dicoding-capstone-2/app/src/main/res/layout/fragment_base.xml" value="0.175" />
+        <entry key="..\:/AndroidProject/sib-dicoding-capstone-2/app/src/main/res/layout/fragment_calculator.xml" value="0.175" />
         <entry key="..\:/AndroidProject/sib-dicoding-capstone-2/app/src/main/res/layout/fragment_food.xml" value="0.175" />
         <entry key="..\:/AndroidProject/sib-dicoding-capstone-2/app/src/main/res/layout/fragment_nutrient.xml" value="0.175" />
         <entry key="..\:/AndroidProject/sib-dicoding-capstone-2/app/src/main/res/layout/fragment_search.xml" value="0.175" />
@@ -28,9 +29,6 @@
         <entry key="..\:/AndroidProject/sib-dicoding-capstone-2/app/src/main/res/menu/search_options_menu.xml" value="0.175" />
         <entry key="..\:/AndroidProject/sib-dicoding-capstone-2/app/src/main/res/menu/tracker_options_menu.xml" value="0.175" />
         <entry key="..\:/AndroidProject/sib-dicoding-capstone-2/app/src/main/res/xml/preferences.xml" value="0.175" />
-        <entry key="app/src/main/res/layout/fragment_calculator.xml" value="0.165" />
-        <entry key="app/src/main/res/menu/bar_menu.xml" value="0.16822916666666668" />
-        <entry key="app/src/main/res/menu/drawer_menu.xml" value="0.16822916666666668" />
       </map>
     </option>
   </component>

@@ -7,7 +7,7 @@
     <item
         android:id="@+id/calculatorFragment"
         android:icon="@drawable/ic_calculate"
-        android:title="Calculator MBR" />
+        android:title="BMR Calculator" />
     <item
         android:id="@+id/nutrientFragment"
         android:icon="@drawable/ic_calories"

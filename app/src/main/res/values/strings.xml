@@ -12,6 +12,7 @@
 
     <!-- Fragment Labels -->
     <string name="diary">My Meal Diary</string>
+    <string name="bmr_calculator">BMR Calculator</string>
     <string name="daily_nutrition">Total Daily Nutrition</string>
     <string name="food">Food</string>
     <string name="settings">Settings</string>
