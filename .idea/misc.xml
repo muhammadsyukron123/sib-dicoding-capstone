@@ -29,6 +29,9 @@
         <entry key="..\:/AndroidProject/sib-dicoding-capstone-2/app/src/main/res/menu/search_options_menu.xml" value="0.175" />
         <entry key="..\:/AndroidProject/sib-dicoding-capstone-2/app/src/main/res/menu/tracker_options_menu.xml" value="0.175" />
         <entry key="..\:/AndroidProject/sib-dicoding-capstone-2/app/src/main/res/xml/preferences.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.11956521739130435" />
+        <entry key="app/src/main/res/layout/fragment_calculator.xml" value="0.11956521739130435" />
+        <entry key="app/src/main/res/layout/fragment_welcome.xml" value="0.11956521739130435" />
       </map>
     </option>
   </component>
