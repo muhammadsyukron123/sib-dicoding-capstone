@@ -18,26 +18,15 @@ class WelcomeFragment : BaseFragment<FragmentWelcomeBinding>(
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        if (sharedViewModel.caloriesGoal.equals(0)){
+        val calGoals = sharedViewModel.caloriesGoal.value
+        if(calGoals != 0 ) {
             navigateToTrackerFragment()
         }
     }
 
-    private var _binding: FragmentWelcomeBinding? = null
-//    private override val binding get() = _binding!!
-
     private fun navigateToTrackerFragment() {
         this@WelcomeFragment.findNavController()
             .navigate(R.id.action_welcomeFragment_to_trackerFragment)
-    }
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        _binding = FragmentWelcomeBinding.inflate(inflater, container, false)
-        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
