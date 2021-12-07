@@ -20,7 +20,7 @@ class TrackerFragment : BaseFragment<FragmentTrackerBinding>(
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         sharedViewModel.modType = ModType.EDIT
-        val goal = 2000
+        val goal = 0
         sharedViewModel.refreshCalorieGoal(goal)
         super.onViewCreated(view, savedInstanceState)
     }
@@ -30,10 +30,6 @@ class TrackerFragment : BaseFragment<FragmentTrackerBinding>(
             setOnClickListener { navigateToNutrients() }
             sharedViewModel.caloriesGoal.observe(viewLifecycleOwner) { goal ->
                 setCaloriesGoal(goal)
-//                setMoreClickListener(goal.toString()) { _, _, editText ->
-//                    val newGoal = editText.text.toString().toInt()
-//                    sharedViewModel.setNewCalorieGoal(newGoal)
-//                }
             }
             sharedViewModel.calories.observe(viewLifecycleOwner) { calories ->
                 setCalories(calories)

@@ -20,6 +20,14 @@ class CalculatorFragment : BaseFragment<FragmentCalculatorBinding>(
 
     private var calculatedBmr: Float = 0f
 
+//    override fun onCreate(savedInstanceState: Bundle?) {
+//        super.onCreate(savedInstanceState)
+//        val calGoals = sharedViewModel.caloriesGoal.value
+//        if(calGoals != 0 ) {
+//            navigateToTrackerFragment()
+//        }
+//    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 

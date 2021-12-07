@@ -88,7 +88,7 @@
         android:id="@+id/calculatorFragment"
         android:name="com.syukron.mymealdiary.ui.fragment.CalculatorFragment"
         android:label="@string/bmr_calculator"
-        tools:layout="@layout/fragment_calculator" >
+        tools:layout="@layout/fragment_calculator">
         <action
             android:id="@+id/action_calculatorFragment_to_trackerFragment"
             app:destination="@id/trackerFragment" />
@@ -97,7 +97,7 @@
         android:id="@+id/welcomeFragment"
         android:name="com.syukron.mymealdiary.ui.fragment.WelcomeFragment"
         android:label="fragment_welcome"
-        tools:layout="@layout/fragment_welcome" >
+        tools:layout="@layout/fragment_welcome">
         <action
             android:id="@+id/action_welcomeFragment_to_calculatorFragment"
             app:destination="@id/calculatorFragment" />

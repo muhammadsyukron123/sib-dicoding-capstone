@@ -11,17 +11,20 @@ import com.syukron.mymealdiary.data.repository.FoodRepository
 import com.syukron.mymealdiary.databinding.FragmentCalculatorBinding
 import com.syukron.mymealdiary.databinding.FragmentWelcomeBinding
 
-class WelcomeFragment : Fragment(){
+class WelcomeFragment : BaseFragment<FragmentWelcomeBinding>(
+    FragmentWelcomeBinding::inflate,
+    hasOptionsMenu = true
+) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        if (sharedViewModel.caloriesGoal.equals(0)){
-//            navigateToTrackerFragment()
-//        }
+        if (sharedViewModel.caloriesGoal.equals(0)){
+            navigateToTrackerFragment()
+        }
     }
 
     private var _binding: FragmentWelcomeBinding? = null
-    private val binding get() = _binding!!
+//    private override val binding get() = _binding!!
 
     private fun navigateToTrackerFragment() {
         this@WelcomeFragment.findNavController()
