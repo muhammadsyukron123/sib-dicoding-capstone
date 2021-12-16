@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../../../layout/custom_preview.xml" value="0.20833333333333334" />
         <entry key="..\:/AndroidProject/MyMealDiary/app/src/main/res/layout/activity_main.xml" value="0.23777173913043478" />
         <entry key="..\:/AndroidProject/sib-dicoding-capstone-2/app/src/main/res/drawable/ic_add.xml" value="0.1953125" />
         <entry key="..\:/AndroidProject/sib-dicoding-capstone-2/app/src/main/res/layout/activity_main.xml" value="0.175" />
@@ -31,6 +32,22 @@
         <entry key="..\:/AndroidProject/sib-dicoding-capstone-2/app/src/main/res/menu/tracker_options_menu.xml" value="0.175" />
         <entry key="..\:/AndroidProject/sib-dicoding-capstone-2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.19114583333333332" />
         <entry key="..\:/AndroidProject/sib-dicoding-capstone-2/app/src/main/res/xml/preferences.xml" value="0.175" />
+        <entry key="app/src/main/res/drawable-v24/style_spiner.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/button_style.xml" value="0.15128205128205127" />
+        <entry key="app/src/main/res/drawable/ic_add.xml" value="0.15128205128205127" />
+        <entry key="app/src/main/res/drawable/ic_chevron_left.xml" value="0.184375" />
+        <entry key="app/src/main/res/drawable/ic_chevron_right.xml" value="0.184375" />
+        <entry key="app/src/main/res/drawable/ic_diary.xml" value="0.184375" />
+        <entry key="app/src/main/res/drawable/spiner_style.xml" value="0.15128205128205127" />
+        <entry key="app/src/main/res/layout/card_calorie_counter.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/card_item_nutrition.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/fragment_calculator.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_tracker.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_welcome.xml" value="0.11" />
+        <entry key="app/src/main/res/layout/item_food.xml" value="0.13803418803418804" />
+        <entry key="app/src/main/res/layout/item_nutrient.xml" value="0.17220543806646527" />
+        <entry key="app/src/main/res/layout/rv_food_list.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/style_spiner.xml" value="0.1272644927536232" />
       </map>
     </option>
   </component>
