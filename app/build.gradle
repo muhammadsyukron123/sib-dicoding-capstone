@@ -3,6 +3,7 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
+    id 'kotlin-android-extensions'
 }
 
 def API_KEY = "PNEOX4nA9L89MENJMpWGvQ==U1Sw6wUiXpg0LjOt"
@@ -47,6 +48,7 @@ dependencies {
     def multidex_version = "2.0.1"
     def room_version = "2.3.0"
 
+
     implementation "androidx.multidex:multidex:$multidex_version"
     implementation "org.jetbrains.kotlin:kotlin-stdlib:1.5.31"
     implementation 'androidx.core:core-ktx:1.7.0'
@@ -79,4 +81,8 @@ dependencies {
     // Hilt
     implementation 'com.google.dagger:hilt-android:2.38.1'
     kapt 'com.google.dagger:hilt-android-compiler:2.38.1'
+
+    implementation 'com.airbnb.android:lottie:3.4.4'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 }

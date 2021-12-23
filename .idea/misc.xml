@@ -32,6 +32,29 @@
         <entry key="..\:/AndroidProject/sib-dicoding-capstone-2/app/src/main/res/menu/tracker_options_menu.xml" value="0.175" />
         <entry key="..\:/AndroidProject/sib-dicoding-capstone-2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.19114583333333332" />
         <entry key="..\:/AndroidProject/sib-dicoding-capstone-2/app/src/main/res/xml/preferences.xml" value="0.175" />
+        <entry key="..\:/Users/muham/Documents/sib-dicoding-capstone3/app/src/main/res/drawable/ic_add.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/muham/Documents/sib-dicoding-capstone3/app/src/main/res/drawable/ic_calories.xml" value="0.3828125" />
+        <entry key="..\:/Users/muham/Documents/sib-dicoding-capstone3/app/src/main/res/drawable/ic_calories_goal.xml" value="0.3828125" />
+        <entry key="..\:/Users/muham/Documents/sib-dicoding-capstone3/app/src/main/res/drawable/onboarding_selected_dot_blue.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/muham/Documents/sib-dicoding-capstone3/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/muham/Documents/sib-dicoding-capstone3/app/src/main/res/layout/activity_on_boarding.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/muham/Documents/sib-dicoding-capstone3/app/src/main/res/layout/activity_splash.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/muham/Documents/sib-dicoding-capstone3/app/src/main/res/layout/card_calorie_counter.xml" value="0.1" />
+        <entry key="..\:/Users/muham/Documents/sib-dicoding-capstone3/app/src/main/res/layout/fragment_about.xml" value="0.25" />
+        <entry key="..\:/Users/muham/Documents/sib-dicoding-capstone3/app/src/main/res/layout/fragment_food.xml" value="0.2921195652173913" />
+        <entry key="..\:/Users/muham/Documents/sib-dicoding-capstone3/app/src/main/res/layout/fragment_on_boarding.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/muham/Documents/sib-dicoding-capstone3/app/src/main/res/layout/fragment_settings.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/muham/Documents/sib-dicoding-capstone3/app/src/main/res/layout/item_food.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/muham/Documents/sib-dicoding-capstone3/app/src/main/res/layout/item_nutrient.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/muham/Documents/sib-dicoding-capstone3/app/src/main/res/layout/rv_food_list.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/muham/Documents/sib-dicoding-capstone3/app/src/main/res/menu/bar_menu.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/muham/Documents/sib-dicoding-capstone3/app/src/main/res/menu/drawer_menu.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/muham/Documents/sib-dicoding-capstone3/app/src/main/res/menu/food_menu.xml" value="0.20104166666666667" />
+        <entry key="..\:/Users/muham/Documents/sib-dicoding-capstone3/app/src/main/res/menu/move_to_menu.xml" value="0.20104166666666667" />
+        <entry key="..\:/Users/muham/Documents/sib-dicoding-capstone3/app/src/main/res/menu/search_bar_menu.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/muham/Documents/sib-dicoding-capstone3/app/src/main/res/menu/search_options_menu.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/muham/Documents/sib-dicoding-capstone3/app/src/main/res/menu/tracker_options_menu.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/muham/Documents/sib-dicoding-capstone3/app/src/main/res/xml/preferences.xml" value="0.20520833333333333" />
         <entry key="app/src/main/res/drawable-v24/style_spiner.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/button_style.xml" value="0.15128205128205127" />
         <entry key="app/src/main/res/drawable/ic_add.xml" value="0.15128205128205127" />

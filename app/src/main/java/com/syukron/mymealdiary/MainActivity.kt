@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main),
                 R.id.calculatorFragment,
                 R.id.nutrientFragment,
                 R.id.settingsFragment,
-                R.id.aboutFragment
+                R.id.aboutFragment2
             ),
             drawerLayout
         )

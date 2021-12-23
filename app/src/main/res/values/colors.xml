@@ -1,13 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="red">#EC255A</color>
-    <color name="teal_50">#6FE4E2</color>
-    <color name="teal_100">#3CC1BA</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
     <color name="black">#000000</color>
     <color name="white">#FAEDF0</color>
-    <color name="safe_color">#BDEF29</color>
-    <color name="danger_color">#FF8C00</color>
-    <color name="background">#EBFBFC</color>
+    <color name="safe_color">#64b5f6</color>
+    <color name="danger_color">#ef5350</color>
+    <color name="blue_normal">#82b1ff</color>
+    <color name="blue_dark">#4d82cb</color>
+    <color name="peach_light">#ffffee</color>
+    <color name="peach_normal">#ffccbc</color>
+    <color name="peach_dark">#cb9b8c</color>
+    <color name="colorPrimary">#82b1ff</color>
+
+    <!--reds-->
+
+    <!-- pinks -->
+
+    <!-- purples -->
+
+    <!-- deep purples -->
+
+    <!-- indigo -->
+
+    <!--blue-->
+    <color name="md_blue_100">#BBDEFB</color>
+
+    <!-- light blue-->
+
+    <!-- cyan -->
+
+    <!-- teal -->
+
+    <!-- green -->
+
+    <!--light green-->
+
+    <!-- lime-->
+
+    <!--yellow -->
+
+    <!--amber-->
+
+    <!--orange-->
+
+    <!--deep orange-->
+
+    <!--brown -->
+
+    <!--grey-->
+    <color name="md_grey_100">#F5F5F5</color>
+    <color name="md_grey_900">#212121</color>
+    <color name="md_white_1000">#ffffff</color>
+
+    <!--blue grey-->
+
 </resources>

@@ -10,10 +10,4 @@
         app:key="@string/theme_preferences_key"
         app:title="Theme" />
 
-    <EditTextPreference
-        android:icon="@drawable/ic_calories_goal"
-        android:defaultValue="2000"
-        app:key="@string/goal_preferences_key"
-        app:summary="@string/goal_summary"
-        app:title="Calories goal" />
 </PreferenceScreen>

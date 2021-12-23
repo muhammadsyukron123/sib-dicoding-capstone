@@ -23,8 +23,6 @@ class SettingsFragment : PreferenceFragmentCompat() {
     ) {
         setPreferencesFromResource(R.xml.preferences, rootKey)
         setThemePreference()
-        setGoalPreference()
-//        setApiPreference()
     }
 
     private fun setThemePreference() {
@@ -38,57 +36,4 @@ class SettingsFragment : PreferenceFragmentCompat() {
             }
     }
 
-    private fun setGoalPreference() {
-        val editTextPreference = preferenceManager
-            .findPreference<EditTextPreference>(getString(R.string.goal_preferences_key))
-        editTextPreference?.summaryProvider =
-            Preference.SummaryProvider<EditTextPreference> { preference ->
-                val text = preference.text
-                if (TextUtils.isEmpty(text)) {
-                    getString(R.string.goal_not_set)
-                } else {
-                    getString(R.string.goal_set, text)
-                }
-            }
-        editTextPreference?.setOnBindEditTextListener { editText ->
-            editText.inputType = InputType.TYPE_CLASS_NUMBER
-        }
-    }
-
-//    private fun setApiPreference() {
-//        val editTextPreference = preferenceManager.findPreference<EditTextPreference>(
-//            getString(R.string.api_preferences_key)
-//        )
-//        editTextPreference?.setOnPreferenceChangeListener { _, _ -> restartApp(); true }
-//        editTextPreference?.summaryProvider =
-//            Preference.SummaryProvider<EditTextPreference> { preference ->
-//                val text = preference.text
-//                val defaultKey = getString(R.string.api_key)
-//                val defaultSummary = getString(R.string.api_key_summary)
-//                when {
-//                    TextUtils.isEmpty(text) -> {
-//                        setDefaultKey(defaultKey)
-//                        defaultSummary
-//                    }
-//                    text == defaultKey -> defaultSummary
-//                    else -> getString(R.string.api_key_summary_set, text)
-//                }
-//            }
-//    }
-//
-//    private fun setDefaultKey(default: String) {
-//        val apiPreferenceKey = getString(R.string.api_preferences_key)
-//        PreferenceManager
-//            .getDefaultSharedPreferences(requireContext())
-//            .edit()
-//            .putString(apiPreferenceKey, default)
-//            .apply()
-//    }
-//
-//    private fun restartApp() {
-//        val context = requireContext()
-//        val intent = Intent(context, MainActivity::class.java)
-//        activity?.startActivity(intent)
-//        activity?.finishAffinity()
-//    }
 }
